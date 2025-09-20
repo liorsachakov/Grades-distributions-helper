@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade-Gurion</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <img src="icons/icon128.png" alt="" class="logo">
+  <h2>Grade-Gurion</h2>
+
+  <div id="landing">
+    <div class="landing-card">
+      <p class="landing-subtitle">תוסף לבדיקת היסטוריית התפלגויות וציונים בקורסים של אוניברסיטת בן גוריון</p>
+      <ol class="landing-steps">
+        <li>
+          במערכת מנהל תלמידים:
+          <ul>
+            <li>בחר "מידע אקדמי"</li>
+            <li>בסרגל הכלים לחץ על "מידע על קורסים"</li>
+            <li>פתח את דף ״התפלגוות ציונים בקורס״</li>
+          </ul>
+        </li>
+        <li>לחץ על הכפתור "הצג"</li>
+        <li>לאחר מכן פתח שנית את התוסף</li>
+      </ol>
+      <div class="landing-status">
+        <span class="spinner" aria-hidden="true"></span>
+        <span id="landingStatusText">ממתינים לביצוע השלבים...</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="main" class="hidden">
+    <label for="year">שנת לימודים</label>
+    <input type="number" id="year" min="2000" max="2100">
+
+    <label for="semester">סמסטר</label>
+    <select id="semester">
+      <option value="1">א</option>
+      <option value="2">ב</option>
+      <option value="3">קיץ</option>
+    </select>
+
+    <label for="department">מספר מחלקה</label>
+    <input type="text" id="department" placeholder="372">
+
+    <label for="course">מספר קורס</label>
+    <input type="text" id="course" placeholder="4406">
+
+    <label for="gradeTerm">מועד מבחן</label>
+    <select id="gradeTerm">
+      <option value="5">ציונים סופיים</option>
+      <option value="1">מועד א</option>
+      <option value="2">מועד ב</option>
+      <option value="3">מועד ג</option>
+    </select>
+
+    <div class="buttons">
+      <button id="generateButton" disabled> יצירת קישור</button>
+      <button id="openButton" disabled>פתח בכרטיסייה חדשה</button>
+      <button id="downloadButton" disabled>הורד מסמך</button>
+      <button id="copyButton" disabled>העתק קישור</button>
+    </div>
+
+    <div id="generatedLink"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+
+    body {
+        font-family: "Segoe UI", Arial, sans-serif;
+        width: 340px;
+        padding: 15px;
+        background: #f5f7fa;
+        color: #2c3e50;
+      }
+      
+      h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+      
+      label {
+        font-weight: 600;
+        margin-top: 12px;
+        display: block;
+      }
+      
+      input, select {
+        width: 100%;
+        padding: 8px 10px;
+        margin-top: 6px;
+        border: 1px solid #d0d7de;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 14px;
+        background: #fff;
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      
+      input:focus, select:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+        outline: none;
+      }
+      
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 15px;
+      }
+      
+      button {
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      }
+      
+      button:disabled {
+        background: #dcdde1 !important;
+        color: #7f8c8d !important;
+        cursor: not-allowed;
+        box-shadow: none;
+      }
+      
+      #generateButton {
+        background: linear-gradient(135deg, #3498db, #2980b9);
+        color: #fff;
+        background: linear-gradient(135deg, #f39c12, #d35400);
+      }
+      #generateButton:hover { filter: brightness(1.1); }
+      
+      #openButton {
+        /* background: linear-gradient(135deg, #27ae60, #1e8449); */
+        color: #fff;
+        background: linear-gradient(135deg, #f39c12, #d35400);
+      }
+      #openButton:hover { filter: brightness(1.1); }
+      
+      #downloadButton {
+        background: linear-gradient(135deg, #e67e22, #ca6f1e);
+        color: #fff;
+        background: linear-gradient(135deg, #f39c12, #d35400);
+      }
+      #downloadButton:hover { filter: brightness(1.1); }
+      
+      #copyButton {
+        background: linear-gradient(135deg, #8e44ad, #6c3483);
+        color: #fff;
+        background: linear-gradient(135deg, #f39c12, #d35400);
+      }
+      #copyButton:hover { filter: brightness(1.1); }
+      
+      #capturePKey {
+        margin-top: 10px;
+        background: linear-gradient(135deg, #f39c12, #d35400);
+        color: #fff;
+      }
+      #capturePKey:hover { filter: brightness(1.1); }
+      
+      #generatedLink {
+        margin-top: 15px;
+        word-break: break-all;
+        font-size: 12px;
+        background: #ecf0f1;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #dcdde1;
+      }
+      
+      /* Landing screen styles */
+      .hidden { display: none; }
+      #landing { text-align: center; margin-top: 10px; }
+      #landing p {
+         /* margin: 10px 0 16px; */
+         text-align:center; 
+         font-size:14px; 
+         color:#555; 
+         margin-top:-10px;
+         }
+      #showMain {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        background: linear-gradient(135deg, #3b82f6, #2563eb);
+        color: #fff;
+        border-radius: 10px;
+      }
+      #showMain:hover { filter: brightness(1.08); }
+
+      /* Enhanced landing */
+      .landing-card {
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 14px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+      .landing-subtitle {
+        margin: 0 0 8px 0;
+        font-size: 13px;
+        color: #4b5563;
+      }
+      .landing-steps {
+        margin: 8px 0 12px 0;
+        padding-inline-start: 18px; /* RTL compatible */
+        text-align: right;
+      }
+      .landing-steps li {
+        margin: 4px 0;
+        color: #374151;
+        font-size: 13px;
+      }
+      .landing-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: #6b7280;
+        font-size: 13px;
+      }
+      .spinner {
+        width: 14px;
+        height: 14px;
+        border: 2px solid #e5e7eb;
+        border-top-color: #f59e0b;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+
+      .logo {
+        display: block;
+        margin: 4px auto 6px auto;
+        width: 60px;
+        height: 60px;
+        border-radius: 16px;
+      }
+
+#openButton,
+#downloadButton,
+#copyButton {
+  display: none;
+}
