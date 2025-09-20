@@ -1,7 +1,7 @@
 # Grades-distributions-helper
 Chrome extension that helps to generate and view grade distributions for BGU courses. 
 
-Disclaimer:
+### Disclaimer:
 This extension is an independent student project and is not affiliated with, endorsed by, 
 or officially connected to Ben-Gurion University or any other institution. 
 The extension simply automates the creation of links to grade distribution reports 
